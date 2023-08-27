@@ -49,7 +49,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-bg-cyan-500 to-team-500  bg-cyan-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1A7lPc8bjJYcKnb8umP57h8Gk89vR38iU/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1CbFKpp2OOoBQiEFmoBym2Wda3o7-jvmI/view"
                 >
                   Resume
                 </a>
@@ -97,14 +97,11 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-cyan-500 py-10 flex flex-col md:flex-row items-center justify-center md:justify-between gap-10 rounded-lg mt-10">
-          <div className=" bg-white shadow-md w-full md:w-1/2 md:mx-3 ml-4 mr-4 relative border-2  rounded-lg p-5">
-            {/* <div
-              className="absolute top-0 left-0 right-0 border-b-2 border-black rounded-full"
-              style={{ transform: "translateY(-50%)" }}
-            ></div> */}
-
-            <h3 className="text-3xl text-left mb-5 text-black">About me </h3>
-            <p className="text-md leading-8 text-justify text-black">
+          <div className="w-full md:w-1/2 md:mx-3 ml-2">
+            <h3 className="text-3xl text-left mb-5 text-white">About me</h3>
+            <hr></hr>
+            <br></br>
+            <p className="text-md leading-8 text-justify mx-3 selection:text-black dark:text-white">
               Designing interactive, user-friendly, and elegant user interfaces
               is my true passion. I'm skilled in creating dynamic websites using
               the MERN stack and have experience with databases like MongoDB,
@@ -318,7 +315,7 @@ export default function Home() {
                     href="https://github.com/gdalvi94/Easy_Bank"
                     className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300"
                   >
-                    GitHub
+                    GitHub{" "}
                   </a>
                 </div>
               </div>

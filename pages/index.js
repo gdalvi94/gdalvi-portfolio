@@ -99,7 +99,7 @@ export default function Home() {
         <section className="bg-cyan-500 py-10 flex flex-col md:flex-row items-center justify-center md:justify-between gap-10 rounded-lg mt-10">
           <div className="w-full md:w-1/2 md:mx-3 ml-2">
             <h3 className="text-3xl text-left mb-5 text-white">About me</h3>
-            <hr></hr>
+            <hr className="mx-3"></hr>
             <br></br>
             <p className="text-md leading-8 text-justify mx-3 selection:text-black dark:text-white">
               Designing interactive, user-friendly, and elegant user interfaces

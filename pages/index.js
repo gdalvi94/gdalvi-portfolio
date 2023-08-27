@@ -12,6 +12,20 @@ import web4 from "../public/event.png";
 import web5 from "../public/sentiment.jpg";
 import web6 from "../public/bank.jpeg";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHtml5,
+  faCss3Alt,
+  faJs,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faDatabase,
+  faServer,
+  faCode,
+  faCloud,
+  faShareAlt,
+} from "@fortawesome/free-solid-svg-icons";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +49,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-bg-cyan-500 to-team-500  bg-cyan-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="https://drive.google.com/file/d/1CbFKpp2OOoBQiEFmoBym2Wda3o7-jvmI/view"
+                  href="https://drive.google.com/file/d/1A7lPc8bjJYcKnb8umP57h8Gk89vR38iU/view?usp=sharing"
                 >
                   Resume
                 </a>
@@ -83,9 +97,14 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-cyan-500 py-10 flex flex-col md:flex-row items-center justify-center md:justify-between gap-10 rounded-lg mt-10">
-          <div className="w-full md:w-1/2 md:mx-5 ml-2">
-            <h3 className="text-3xl text-left mb-5 text-white">About me</h3>
-            <p className="text-md leading-8 text-left text-black dark:text-white">
+          <div className=" bg-white shadow-md w-full md:w-1/2 md:mx-3 ml-4 mr-4 relative border-2  rounded-lg p-5">
+            {/* <div
+              className="absolute top-0 left-0 right-0 border-b-2 border-black rounded-full"
+              style={{ transform: "translateY(-50%)" }}
+            ></div> */}
+
+            <h3 className="text-3xl text-left mb-5 text-black">About me </h3>
+            <p className="text-md leading-8 text-justify text-black">
               Designing interactive, user-friendly, and elegant user interfaces
               is my true passion. I'm skilled in creating dynamic websites using
               the MERN stack and have experience with databases like MongoDB,
@@ -97,40 +116,40 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 mx-5">
             <div className="flex flex-wrap gap-3 ml-5">
-              <div className=" text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+              <div className="text-base bg-white border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+                <FontAwesomeIcon icon={faHtml5} className="mr-2" />
                 HTML
               </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+              <div className="text-base bg-white border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+                <FontAwesomeIcon icon={faCss3Alt} className="mr-2" />
                 CSS
               </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+              <div className="text-base bg-white border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+                <FontAwesomeIcon icon={faJs} className="mr-2" />
                 JavaScript
               </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+              <div className="text-base bg-white border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+                <FontAwesomeIcon icon={faReact} className="mr-2" />
                 React
               </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+              <div className="text-base bg-white border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+                <FontAwesomeIcon icon={faServer} className="mr-2" />
                 NodeJS
               </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+              <div className="text-base bg-white border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+                <FontAwesomeIcon icon={faCode} className="mr-2" />
                 ExpressJS
               </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+              <div className="text-base bg-white border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+                <FontAwesomeIcon icon={faShareAlt} className="mr-2" />
                 RestAPIs
               </div>
 
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+              <div className="text-base bg-white border-gray-600 rounded-lg p-2 hover:bg-gray-300">
+                <FontAwesomeIcon icon={faDatabase} className="mr-2" />
                 MongoDB
               </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
-                MySQL
-              </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
-                Tailwind
-              </div>
-              <div className="text-base bg-gray-400 border-gray-600 rounded-lg p-2 hover:bg-gray-300">
-                Java
-              </div>
+              {/* Additional icons here */}
             </div>
           </div>
         </section>
@@ -299,7 +318,7 @@ export default function Home() {
                     href="https://github.com/gdalvi94/Easy_Bank"
                     className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors duration-300"
                   >
-                    GitHub{" "}
+                    GitHub
                   </a>
                 </div>
               </div>
@@ -369,7 +388,7 @@ export default function Home() {
                 <h3 className="text-2xl md:text-3xl text-center md:text-left mb-4 font-semibold">
                   Let's Connect
                 </h3>
-                <p className="text-md leading-7 text-center md:text-left text-gray-800">
+                <p className="text-md leading-7 text-center md:text-left mx-3 text-gray-800">
                   I hope you enjoyed exploring my portfolio. Learning new
                   concepts brings me joy, and I'm always open to new ideas and
                   collaborations. If you have any exciting projects in mind or
